@@ -1,3 +1,4 @@
+/// Enumeration for migration types between old and new formats.
 enum MigrateEnum {
   /// 1: migrate from old to new format
   oldToNew(value: 1),

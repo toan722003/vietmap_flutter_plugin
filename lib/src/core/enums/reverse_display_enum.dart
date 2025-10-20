@@ -1,3 +1,4 @@
+/// Enumeration for reverse display formats.
 enum ReverseDisplayEnum {
   /// [newFormat] New merged administrative format (2 levels: ward, city).
   newFormat(value: 1),

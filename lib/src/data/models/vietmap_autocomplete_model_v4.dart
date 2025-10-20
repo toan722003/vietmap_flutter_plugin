@@ -2,8 +2,9 @@ import 'package:vietmap_flutter_plugin/src/data/models/vietmap_entry_point_model
 import 'package:vietmap_flutter_plugin/vietmap_flutter_plugin.dart';
 
 
+
 class VietmapAutocompleteModelV4 extends VietmapAutocompleteModel {
-  /// [entryPoints] list containing entry points for the POI. This value will available for some special address, like airport, hotel,...
+  /// [entryPoints] List containing entry points for the POI. This value will available for some special address, like airport, hotel,...
   List<VietmapEntryPointModel?>? entryPoints;
 
   /// [dataOld] Old-format variant of this result (when applicable to the chosen display type), otherwise null.

@@ -1,3 +1,4 @@
+/// Enumeration for autocomplete display formats.
 enum AutocompleteDisplayEnum {
   /// [newFormat] New merged administrative format (2 levels: ward, city).
   newFormat(value: 1),
