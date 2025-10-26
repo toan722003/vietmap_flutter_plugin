@@ -110,8 +110,8 @@ class Vietmap {
     return SearchAddressUseCase(getVietmapApiRepositories()).call(params);
   }
 
-  /// Autocomplete V4 API provides location suggestions based on user input.  
-  /// This API is designed to help users quickly find and select locations  
+  /// Autocomplete V4 API provides location suggestions based on user input.
+  /// This API is designed to help users quickly find and select locations
   /// by suggesting potential matches as they type, enhancing the user experience
   /// in location-based applications.
   /// See more at https://maps.vietmap.vn/docs/map-api/autocomplete-version/autocomplete-v4
@@ -134,10 +134,9 @@ class Vietmap {
         .call(LatLng(location.latitude, location.longitude));
   }
 
-  
-  /// Reverse V4 API is a demonstration version of the reverse geocoding service 
-  /// that allows developers to test and explore location search features. 
-  /// This API provides a way to convert geographic coordinates (latitude and longitude) into readable addresses and location information, 
+  /// Reverse V4 API is a demonstration version of the reverse geocoding service
+  /// that allows developers to test and explore location search features.
+  /// This API provides a way to convert geographic coordinates (latitude and longitude) into readable addresses and location information,
   /// helping developers understand the capabilities before implementing the full version.
   /// See more at https://maps.vietmap.vn/docs/map-api/reverse-version/reverse-v4.
   static Future<Either<Failure, VietmapReverseModelV4>> reverseV4(
@@ -193,9 +192,9 @@ class Vietmap {
     return GeoCodeUseCase(getVietmapApiRepositories()).call(params);
   }
 
-  /// Retrieves a list of locations based on the provided address input.  
-  /// Upgraded from the Geocode v3 API, version 4 offers enhanced performance  
-  /// and provides a more powerful solution for developers to integrate  
+  /// Retrieves a list of locations based on the provided address input.
+  /// Upgraded from the Geocode v3 API, version 4 offers enhanced performance
+  /// and provides a more powerful solution for developers to integrate
   /// location search functionality into their applications.
   /// See more at https://maps.vietmap.vn/docs/map-api/geocode-version/geocode-v4
   static Future<Either<Failure, List<VietmapAutocompleteModelV4>>> geoCodeV4(

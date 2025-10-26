@@ -11,7 +11,6 @@ class VietmapMigrateAddressParams {
   /// Migrate type. See enum [MigrateType] for more details
   final int? migrateType;
 
-
   VietmapMigrateAddressParams({
     required this.text,
     this.focus,
